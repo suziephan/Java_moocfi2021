@@ -23,6 +23,14 @@ public class Swap {
         // asking for the two indices
         // and then swapping them
 
+        System.out.println("Give two indices to swap:");
+        int value1 = Integer.valueOf(scanner.nextLine());
+        int value2 = Integer.valueOf(scanner.nextLine());
+        
+        int refer = array[value1];
+        array[value1] = array[value2];
+        array[value2] = refer;
+        
         System.out.println("");
         index = 0;
         while (index < array.length) {

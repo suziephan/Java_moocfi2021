@@ -8,7 +8,11 @@ public class SumOfArray {
     }
 
     public static int sumOfNumbersInArray(int[] array) {
+        int sum = 0;
         // Write some code here
-        return 0;
+        for (int i : array) {
+            sum += i;
+        }
+        return sum;
     }
 }
