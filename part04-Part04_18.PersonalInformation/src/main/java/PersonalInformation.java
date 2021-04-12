@@ -11,6 +11,10 @@ public class PersonalInformation {
         this.identificationNumber = identificationNumber;
     }
 
+    PersonalInformation(String firstName, String lastName, int identificationNumber) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -25,6 +29,6 @@ public class PersonalInformation {
 
     @Override
     public String toString() {
-        return this.lastName + ", " + this.firstName + " (" + this.identificationNumber + ")";
+        return this.lastName + ", " + this.firstName +  " (" + this.identificationNumber + ")";
     }
 }
