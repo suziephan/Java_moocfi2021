@@ -26,7 +26,14 @@ public class SportStatistics1 {
                 if (game.getHome().equals(team) || game.getVisit().equals(team) ) {
                     match++;
                 } 
+                if (game.getHomeScore() >game.getVisitScore()) {
+                    win++ ;
+                } else {
+                    lose++;
+                }
             }
+            
+           
             System.out.println("Games: "+ match);
             //System.out.println("Wins: "+ win);
             //System.out.println("Losses: "+ lose);
